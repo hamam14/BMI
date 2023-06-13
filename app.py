@@ -41,9 +41,7 @@ st.header('Prediksi BMI/Indeks Massa Tubuh')
 tab1, tab2, tab3, tab4 = st.tabs(["Deskripsi Data", "Tab Pre - Processing", "Tab Modeling", "Tab Implementasi"])
 
 with tab1:
-    st.write("BMI:", BMI)
-
-#    st.image("TabDD1.png")
+    st.image("Frame1.png")
 
 with tab2:
     st.write("BMI:", BMI)
