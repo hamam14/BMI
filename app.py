@@ -60,5 +60,5 @@ with tab4:
         st.success(f'Anda termasuk {prediksi}')
         
 with tab5:
-    st.write("Nama Saya Hamam Mubarok Al Hadad Biasa dipanggil Hamam")
-    st.write("NIM Saya adalah 210411100060")
+    st.image("Frame5.png")
+
