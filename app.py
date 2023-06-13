@@ -42,14 +42,15 @@ tab1, tab2, tab3, tab4 = st.tabs(["Deskripsi Data", "Tab Pre - Processing", "Tab
 
 with tab1:
     st.image("Frame1.png")
+    st.image("Frame2.png")
 
 with tab2:
-    st.write("BMI:", BMI)
+#     st.write("BMI:", BMI)
 
 #    st.image("TabPP1.png")
     
 with tab3:
-    st.write("BMI:", BMI)
+#     st.write("BMI:", BMI)
 
 #    st.image("tabmodel.png")
 
