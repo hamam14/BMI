@@ -38,7 +38,7 @@ st.set_page_config(
 
 st.header('Prediksi BMI/Indeks Massa Tubuh')
 
-tab1, tab2, tab3, tab4 = st.tabs(["Data", "Pre - Processing Data", "Modeling", "Implementasi"])
+tab1, tab2, tab3, tab4 = st.tabs(["Data", "Preprocessing data", "Modelling", "Implementasi"])
 
 with tab1:
     st.image("Frame1.png")
