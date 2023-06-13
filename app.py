@@ -42,8 +42,7 @@ tab1, tab2, tab3, tab4, tab5 = st.tabs(["Data", "Preprocessing data", "Modelling
 
 with tab1:
     st.image("Frame1.png")
-    st.image("Frame2.png")
-
+    
 with tab2:
     st.image("Frame3.png")
     
