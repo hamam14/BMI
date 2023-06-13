@@ -38,7 +38,7 @@ st.set_page_config(
 
 st.header('Prediksi BMI/Indeks Massa Tubuh')
 
-tab1, tab2, tab3, tab4 = st.tabs(["Deskripsi Data", "Tab Pre - Processing", "Tab Modeling", "Tab Implementasi"])
+tab1, tab2, tab3, tab4 = st.tabs(["Data", "Pre - Processing Data", "Modeling", "Implementasi"])
 
 with tab1:
     st.image("Frame1.png")
@@ -51,14 +51,11 @@ with tab3:
     st.image("Frame4.png")
 
 with tab4:
-    st.image("Frame5.png")
+    Height = st.number_input("Masukkan Tinggi Badan Anda", min_value=0, max_value=300, value=10)
+    Weight = st.number_input("Masukkan Berat Badan Anda", min_value=0, max_value=300, value=10)
+    BMI = round(Weight / ((Height / 100) ** 2), 2)
+    st.write("BMI:", BMI)
 
-
-Height = st.number_input("Masukkan Tinggi Badan Anda", min_value=0, max_value=300, value=10)
-Weight = st.number_input("Masukkan Berat Badan Anda", min_value=0, max_value=300, value=10)
-BMI = round(Weight / ((Height / 100) ** 2), 2)
-st.write("BMI:", BMI)
-
-if st.button('Prediksi'):
-    prediksi = predict(Height, Weight, BMI)
-    st.success(f'Anda termasuk {prediksi}')
+    if st.button('Prediksi'):
+        prediksi = predict(Height, Weight, BMI)
+        st.success(f'Anda termasuk {prediksi}')
