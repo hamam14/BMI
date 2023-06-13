@@ -38,7 +38,7 @@ st.set_page_config(
 
 st.header('Prediksi BMI/Indeks Massa Tubuh')
 
-tab1, tab2, tab3, tab4 = st.tabs(["Data", "Preprocessing data", "Modelling", "Implementasi"])
+tab1, tab2, tab3, tab4, tab5 = st.tabs(["Data", "Preprocessing data", "Modelling", "Implementasi", "Profile"])
 
 with tab1:
     st.image("Frame1.png")
@@ -59,3 +59,7 @@ with tab4:
     if st.button('Prediksi'):
         prediksi = predict(Height, Weight, BMI)
         st.success(f'Anda termasuk {prediksi}')
+        
+with tab5:
+    st.write("Nama Saya Hamam Mubarok Al Hadad Biasa dipanggil Hamam")
+    st.write("NIM Saya adalah 210411100060")
