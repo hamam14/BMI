@@ -40,6 +40,26 @@ st.header('Prediksi BMI/Indeks Massa Tubuh')
 
 tab1, tab2, tab3, tab4 = st.tabs(["Deskripsi Data", "Tab Pre - Processing", "Tab Modeling", "Tab Implementasi"])
 
+with tab1:
+    st.write("BMI:", BMI)
+
+#    st.image("TabDD1.png")
+
+with tab2:
+    st.write("BMI:", BMI)
+
+#    st.image("TabPP1.png")
+    
+with tab3:
+    st.write("BMI:", BMI)
+
+#    st.image("tabmodel.png")
+
+with tab4:
+    st.write("BMI:", BMI)
+#    st.image("TI1.png")
+#    st.image("TI2.png")
+
 Height = st.number_input("Masukkan Tinggi Badan Anda", min_value=0, max_value=300, value=10)
 Weight = st.number_input("Masukkan Berat Badan Anda", min_value=0, max_value=300, value=10)
 BMI = round(Weight / ((Height / 100) ** 2), 2)
