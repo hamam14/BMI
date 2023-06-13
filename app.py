@@ -48,13 +48,11 @@ with tab2:
     st.image("Frame3.png")
     
 with tab3:
-#     st.write("BMI:", BMI)
-
-#    st.image("tabmodel.png")
+    st.image("Frame4.png")
 
 with tab4:
-    #    st.image("TI1.png")
-#    st.image("TI2.png")
+    st.image("Frame5.png")
+
 
 Height = st.number_input("Masukkan Tinggi Badan Anda", min_value=0, max_value=300, value=10)
 Weight = st.number_input("Masukkan Berat Badan Anda", min_value=0, max_value=300, value=10)
